@@ -44,4 +44,5 @@ int main(){
 
         cout<< (*it) << " ";
     }
+    // in pair we use (*it).first <=> (it->first) both gives us same output
 }
