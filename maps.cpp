@@ -59,7 +59,7 @@ int main (){
     cout << endl;
 
     // 2) erase == it erases the value and key 
-    m.erase(5);
+    m.erase(5); 
 
     // 3) swap it swaps two maps
     z[1]=3;
@@ -125,5 +125,20 @@ int main (){
 
         
     
+    //  UNordered map : everything is same as map bass yha random order output aaega 
+    // O(1) agr order matter nahi krta hai toh unorderedmap use kr lena 
+
+    unordered_map<int ,int> a;
+    for(int i=0;i<n;i++){
+        int k;
+        cin >> k;
+        a[k]=i;
+    }
+
+    for(auto l :a){  // prints map in random order
+        cout << l.first << " " << l.second << endl;
+    }
+
+    // similarly all function used 
 
 }
